@@ -1,0 +1,18 @@
+.episode1 {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+
+.jobData {
+    background-color: rgba(128, 128, 128, 0.267);
+    border: solid 1px black;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.jobData h2{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,139 @@
+.episode4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+    min-height: 89vh;
+    max-height: 90vh;
+    border-radius: 6px;
+}
+
+.taskEntry {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(0, 17, 255);
+    align-items: center;
+    padding: 10px 0;
+}
+
+.headingText {
+    color: white;
+}
+
+.addTask {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.addTask input {
+    background-color: rgba(128, 128, 128, 0.377);
+    padding: 10px;
+    border: solid 1px rgba(128, 128, 128, 0.568);
+    border-radius: 6px;
+    background-color: white;
+}
+
+.addTask input:focus {
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    outline: solid 1px white;
+}
+
+.addTask button {
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 6px;
+    width: fit-content;
+    border: solid 1px rgba(128, 128, 128, 0.568);
+    transition: 0.2s all;
+}
+
+.addTask button:hover {
+    background-color: white;
+    border-color: rgba(128, 128, 128, 0.829);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0 2.5%;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+    width: 10px;
+    /* display: none; */
+}
+
+.list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #88888863;
+    border-radius: 5px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.taskList {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    width: 100%;
+    box-shadow: 1px 1px 2px 0px #0000006c;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
+    transition: 0.3s all;
+}
+
+.taskList:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 2px 1px #0000006c;
+}
+
+.taskList p {
+    margin-left: 15px;
+}
+
+.list .btnCase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.list button {
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s all;
+}
+
+
+.list .deleteBtn {
+    background-color: rgba(255, 0, 0, 0.979);
+}
+
+.list .deleteBtn:hover {
+    background-color: rgba(255, 0, 0, 0.808);
+}
+
+.list .doneBtn {
+    background-color: rgba(27, 128, 2, 0.979);
+}
+
+.list .doneBtn:hover {
+    background-color: rgba(27, 128, 2, 0.808);
+}

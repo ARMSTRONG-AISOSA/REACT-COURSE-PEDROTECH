@@ -1,0 +1,74 @@
+.episode3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.countContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.countBtn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.countBtn:hover {
+    scale: 0.97;
+}
+
+.pBtn {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inputDiv {
+    background-color: rgba(0, 0, 0, 0.103);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    padding-bottom: 25px;
+    width: fit-content;
+    min-width: 300px;
+}
+
+.inputDiv input {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 4px;
+    outline: 1px rgba(0, 0, 0, 0.322) solid;
+}
+
+.inputDiv input:focus {
+    outline: 1px black solid;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.btnClass {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+
+.btnClass:hover {
+    scale: 0.96;
+}

@@ -1,0 +1,92 @@
+[
+    {
+        "firstName": "David",
+        "lastName": "de Gea",
+        "salary": 375000,
+        "jerseyNumber": 1,
+        "position": "Goalkeeper",
+        "age": 33,
+        "goals": 0
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Maguire",
+        "salary": 190000,
+        "jerseyNumber": 5,
+        "position": "Defender",
+        "age": 30,
+        "goals": 6
+    },
+    {
+        "firstName": "Bruno",
+        "lastName": "Fernandes",
+        "salary": 240000,
+        "jerseyNumber": 8,
+        "position": "Midfielder",
+        "age": 29,
+        "goals": 38
+    },
+    {
+        "firstName": "Marcus",
+        "lastName": "Rashford",
+        "salary": 200000,
+        "jerseyNumber": 10,
+        "position": "Forward",
+        "age": 26,
+        "goals": 88
+    },
+    {
+        "firstName": "Mason",
+        "lastName": "Greenwood",
+        "salary": 75000,
+        "jerseyNumber": 11,
+        "position": "Forward",
+        "age": 22,
+        "goals": 22
+    },
+    {
+        "firstName": "Luke",
+        "lastName": "Shaw",
+        "salary": 150000,
+        "jerseyNumber": 23,
+        "position": "Defender",
+        "age": 28,
+        "goals": 3
+    },
+    {
+        "firstName": "Fred",
+        "lastName": "",
+        "salary": 120000,
+        "jerseyNumber": 17,
+        "position": "Midfielder",
+        "age": 31,
+        "goals": 9
+    },
+    {
+        "firstName": "Anthony",
+        "lastName": "Martial",
+        "salary": 250000,
+        "jerseyNumber": 9,
+        "position": "Forward",
+        "age": 28,
+        "goals": 57
+    },
+    {
+        "firstName": "Scott",
+        "lastName": "McTominay",
+        "salary": 60000,
+        "jerseyNumber": 39,
+        "position": "Midfielder",
+        "age": 27,
+        "goals": 18
+    },
+    {
+        "firstName": "Aaron",
+        "lastName": "Wan-Bissaka",
+        "salary": 90000,
+        "jerseyNumber": 29,
+        "position": "Defender",
+        "age": 26,
+        "goals": 2
+    }
+]

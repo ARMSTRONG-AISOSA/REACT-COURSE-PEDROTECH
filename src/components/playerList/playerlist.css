@@ -1,0 +1,34 @@
+.playerList {
+    padding: 0 10px;
+}
+
+.playerData {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: rgba(0, 0, 0, 0.116);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    transition: 0.3s all;
+    max-width: 400px;
+}
+
+.playerData:hover {
+    border: 1px solid rgba(0, 0, 0, 0.521);
+}
+
+.playerData p {
+    padding: 3px 8px;
+    border-radius: 16px;
+    width: fit-content;
+    border: 1px solid transparent;
+    transition: 0.2s all;
+}
+
+.playerData p:hover {
+    background-color: white;
+    color: black;
+    border-color: rgba(0, 0, 0, 0.397);
+}
