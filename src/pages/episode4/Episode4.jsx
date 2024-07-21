@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './episode4.css';
+import TaskList from '../../components/taskList/TaskList';
 
 const Episode4 = () => {
 
@@ -25,6 +26,7 @@ const Episode4 = () => {
             };
 
             setTodoList([...todoList, task]);
+            setNewTask(""); // Reset the input field
         }
     }
 
@@ -71,6 +73,7 @@ const Episode4 = () => {
 
                     <div className='addTask'>
                         <input type="text"
+                            value={newTask} // Bind the input value to the state
                             onChange={handleChange}
                             placeholder='Enter New Task' />
 
@@ -82,24 +85,12 @@ const Episode4 = () => {
 
                 <div className='list'>
                     {todoList.map((task, index) => {
-                        return <div className='taskList' style={{ backgroundColor: task.status }} key={index}>
-                            <p>{task.taskName}</p>
-                            <div className='btnCase'>
-                                <button
-                                    // passing the "(task)_id" of the todo list map as the argument of the function
-                                    // With an arguement being passed into it the function has to be called in this way
-                                    className='deleteBtn'
-                                    onClick={() => handleDeleteTask(task.id)}
-                                >Del</button>
-
-                                <button
-                                    className='doneBtn'
-                                    onClick={() => handleDone(task.id)}
-                                >
-                                    Done
-                                </button>
-                            </div>
-                        </div>;
+                        return <TaskList
+                            key={task.id}
+                            task={task}
+                            handleDeleteTask={handleDeleteTask}
+                            handleDone={handleDone}
+                        />;
                     })}
                 </div>
 
@@ -110,3 +101,4 @@ const Episode4 = () => {
 }
 
 export default Episode4
+

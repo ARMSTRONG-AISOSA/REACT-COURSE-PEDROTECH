@@ -1,0 +1,56 @@
+
+.taskList {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    width: 100%;
+    max-width: 750px;
+    box-shadow: 1px 1px 2px 0px #0000006c;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
+    transition: 0.3s all;
+}
+
+.taskList:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 2px 1px #0000006c;
+}
+
+.taskList p {
+    margin-left: 15px;
+}
+
+.list .btnCase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.list button {
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s all;
+}
+
+
+.list .deleteBtn {
+    background-color: rgba(255, 0, 0, 0.979);
+}
+
+.list .deleteBtn:hover {
+    background-color: rgba(255, 0, 0, 0.808);
+}
+
+.list .doneBtn {
+    background-color: rgba(27, 128, 2, 0.979);
+}
+
+.list .doneBtn:hover {
+    background-color: rgba(27, 128, 2, 0.808);
+}
