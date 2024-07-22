@@ -4,6 +4,7 @@ import Episode2 from './pages/episode2/Episode2';
 import Episode3 from './pages/episode3/Episode3';
 import Episode4 from "./pages/episode4/Episode4";
 import Episode5 from "./pages/episode5/Episode5";
+import Episode6 from "./pages/episode6/Episode6";
 
 import ErrorPage from './pages/errorpage/ErrorPage';
 
@@ -21,6 +22,8 @@ function App() {
           <Route path="/episode4" element={<Episode4 />} />
 
           <Route path="/episode5" element={<Episode5 />} />
+
+          <Route path="/episode6" element={<Episode6 />} />
 
           {/* Error Page */}
           <Route path="*" element={<ErrorPage />} />
