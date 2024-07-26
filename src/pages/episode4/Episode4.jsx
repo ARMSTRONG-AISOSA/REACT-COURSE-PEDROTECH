@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './episode4.css';
+import Navbar from '../../components/navbar/Navbar';
 import TaskList from '../../components/taskList/TaskList';
 
 const Episode4 = () => {
@@ -66,36 +67,39 @@ const Episode4 = () => {
     };
 
     return (
-        <div className='container '>
-            <div className='episode4'>
-                <div className='taskEntry'>
-                    <h1 className='headingText'>Episode4</h1>
+        <div>
+            <Navbar />
+            <div className='container '>
+                <div className='episode4'>
+                    <div className='taskEntry'>
+                        <h1 className='headingText'>Episode4</h1>
 
-                    <div className='addTask'>
-                        <input type="text"
-                            value={newTask} // Bind the input value to the state
-                            onChange={handleChange}
-                            placeholder='Enter New Task' />
+                        <div className='addTask'>
+                            <input type="text"
+                                value={newTask} // Bind the input value to the state
+                                onChange={handleChange}
+                                placeholder='Enter New Task' />
 
-                        <button
-                            onClick={addTask}
-                        >Add Task</button>
+                            <button
+                                onClick={addTask}
+                            >Add Task</button>
+                        </div>
                     </div>
-                </div>
 
-                <div className='list'>
-                    {todoList.map((task, index) => {
-                        return <TaskList
-                            key={task.id}
-                            task={task}
-                            handleDeleteTask={handleDeleteTask}
-                            handleDone={handleDone}
-                        />;
-                    })}
+                    <div className='list'>
+                        {todoList.map((task, index) => {
+                            return <TaskList
+                                key={task.id}
+                                task={task}
+                                handleDeleteTask={handleDeleteTask}
+                                handleDone={handleDone}
+                            />;
+                        })}
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
     )
 }

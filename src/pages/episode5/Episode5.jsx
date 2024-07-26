@@ -1,5 +1,6 @@
 import React from 'react'
 import './episode5.css';
+import Navbar from '../../components/navbar/Navbar';
 import { useState, useEffect } from 'react';
 
 const Episode5 = () => {
@@ -23,19 +24,22 @@ const Episode5 = () => {
   // '}, [text])': This makes it trigger as the inputed text changes 
 
   return (
-    <div className='container episode5'>
-      <h1>Episode 5</h1>
-      <h3>Component Status: {status}</h3>
+    <div>
+      <Navbar />
+      <div className='container episode5'>
+        <h1>Episode 5</h1>
+        <h3>Component Status: {status}</h3>
 
-      <input type="text"
-        placeholder='Enter Text'
-        className='inputTest'
-        onChange={(e) => {
-          setText(e.target.value);
-        }}
-      />
+        <input type="text"
+          placeholder='Enter Text'
+          className='inputTest'
+          onChange={(e) => {
+            setText(e.target.value);
+          }}
+        />
 
-      <p> Input Value: {text} </p>
+        <p> Input Value: {text} </p>
+      </div>
     </div>
 
   )

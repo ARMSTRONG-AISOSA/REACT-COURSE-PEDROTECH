@@ -1,5 +1,7 @@
 import React from 'react';
 import './episode1.css';
+import Navbar from '../../components/navbar/Navbar';
+
 
 
 const Episode1 = () => {
@@ -17,38 +19,42 @@ const Episode1 = () => {
     );
 
     return (
-        <div className='container episode1'>
-            <div>
-                {episodeNum}
-            </div>
+        <div className=''>
+            <Navbar />
+            <div className='container episode1'>
+                <div>
+                    {episodeNum}
+                </div>
 
-            <div>
-                <h2>JSX Test</h2>
-                {userData}
-            </div>
+                <div>
+                    <h2>JSX Test</h2>
+                    {userData}
+                </div>
 
-            <div>
-                <TestComponent />
-            </div>
+                <div>
+                    <TestComponent />
+                </div>
 
-            <div>
-                <h2>Test Props Component</h2>
+                <div>
+                    <h2>Test Props Component</h2>
 
-                <br />
-                <h2>First Prop Component</h2>
-                <TestPropComponent name='Jake' age={25} email='jake@gmail.com' />
+                    <br />
+                    <h2>First Prop Component</h2>
+                    <TestPropComponent name='Jake' age={25} email='jake@gmail.com' />
 
-                <br />
-                <h2>Second Prop Component</h2>
-                <TestPropComponent name='Ben' age={22} email='Ben@gmail.com' />
-            </div>
+                    <br />
+                    <h2>Second Prop Component</h2>
+                    <TestPropComponent name='Ben' age={22} email='Ben@gmail.com' />
+                </div>
 
-            <div>
-                <JobData title='Assignment Prop 1' company='Amazon' salary='$120,000' position='Jr Developer'/>
+                <div>
+                    <JobData title='Assignment Prop 1' company='Amazon' salary='$120,000' position='Jr Developer' />
 
-                <JobData title='Assignment Prop 2' company='Netflix' salary='$117,000' position='Jr Developer'/>
+                    <JobData title='Assignment Prop 2' company='Netflix' salary='$117,000' position='Jr Developer' />
+                </div>
             </div>
         </div>
+
     )
 }
 

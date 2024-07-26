@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './episode6.css';
+import Navbar from '../../components/navbar/Navbar';
 import axios from 'axios';
 
 const Episode6 = () => {
@@ -96,113 +97,116 @@ const Episode6 = () => {
     }, []);
 
     return (
-        <div className='container episode6'>
-            <h1>Episode6: Fetch Data </h1>
+        <div>
+            <Navbar />
+            <div className='container episode6'>
+                <h1>Episode6: Fetch Data </h1>
 
-            <div className='CatFactGen'>
-                <h3>Random Cat Fact Generator</h3>
-                <p>{dataFact}</p>
-                <button
-                    className='RefreshBtn'
-                    onClick={handleRefresh}
-                >Refresh</button>
-            </div>
-
-            <div className='dogImgGen'>
-                <h3>Dog Image Generator</h3>
-                <img
-                    className='dogImg'
-                    src={dogImg}
-                    alt="Dog_Image" />
-                <button
-                    className='RefreshBtn'
-                    onClick={handleRefreshImg}
-                >Img Refresh</button>
-            </div>
-
-            <div className='nameAgeGen'>
-                <h3>Name Average Age</h3>
-
-                <input
-                    className='inputClass'
-                    type="text"
-                    placeholder='Enter Name'
-                    onChange={(event) => {
-                        setSubmitedName(event.target.value);
-                    }}
-                    value={submitName}
-                />
-
-                <button
-                    className='RefreshBtn'
-                    onClick={handleNameSubmit}
-                >Submit</button>
-
-
-                <h4>Result</h4>
-                <div className='resultDiv'>
-                    <p>Name: {avgName}</p>
-                    <p>Age: {avgAge}</p>
-                    <p>Count: {avgCount}</p>
-                </div>
-            </div>
-
-            <div className='nameAgeGen2'>
-                <h3>Name Average Age: Object Data</h3>
-
-                <input
-                    className='inputClass'
-                    type="text"
-                    placeholder='Ex. James...'
-                    onChange={(event) => {
-                        setSubmitedName2(event.target.value);
-                    }}
-                    value={submitName2}
-                />
-
-                <button
-                    className='RefreshBtn'
-                    onClick={handleNameSubmit2}
-                >Submit</button>
-
-
-                <h4>Result</h4>
-                <div className='resultDiv'>
-                    {/* This mean only access (ex. name) inside this object if not null. */}
-                    <p>Name: {avgObj?.name}</p>
-                    <p>Age: {avgObj?.age}</p>
-                    <p>Count: {avgObj?.count}</p>
-                </div>
-            </div>
-
-            <div className='excuseGen'>
-                <h3>Excuse Generator</h3>
-
-                <p>{genExcuse}</p>
-
-                <div className='excuseBtns'>
-                <button
-                    className='RefreshBtn'
-                    onClick={() => {
-                        handleEscGen("party");
-                    }}
-                >Party</button>
-
-                <button
-                    className='RefreshBtn'
-                    onClick={() => {
-                        handleEscGen("gaming");
-                    }}
-                >Gaming</button>
-
-                <button
-                    className='RefreshBtn'
-                    onClick={() => {
-                        handleEscGen("developers");
-                    }}
-                >Developer</button>
+                <div className='CatFactGen'>
+                    <h3>Random Cat Fact Generator</h3>
+                    <p>{dataFact}</p>
+                    <button
+                        className='RefreshBtn'
+                        onClick={handleRefresh}
+                    >Refresh</button>
                 </div>
 
+                <div className='dogImgGen'>
+                    <h3>Dog Image Generator</h3>
+                    <img
+                        className='dogImg'
+                        src={dogImg}
+                        alt="Dog_Image" />
+                    <button
+                        className='RefreshBtn'
+                        onClick={handleRefreshImg}
+                    >Img Refresh</button>
+                </div>
+
+                <div className='nameAgeGen'>
+                    <h3>Name Average Age</h3>
+
+                    <input
+                        className='inputClass'
+                        type="text"
+                        placeholder='Enter Name'
+                        onChange={(event) => {
+                            setSubmitedName(event.target.value);
+                        }}
+                        value={submitName}
+                    />
+
+                    <button
+                        className='RefreshBtn'
+                        onClick={handleNameSubmit}
+                    >Submit</button>
+
+
+                    <h4>Result</h4>
+                    <div className='resultDiv'>
+                        <p>Name: {avgName}</p>
+                        <p>Age: {avgAge}</p>
+                        <p>Count: {avgCount}</p>
+                    </div>
+                </div>
+
+                <div className='nameAgeGen2'>
+                    <h3>Name Average Age: Object Data</h3>
+
+                    <input
+                        className='inputClass'
+                        type="text"
+                        placeholder='Ex. James...'
+                        onChange={(event) => {
+                            setSubmitedName2(event.target.value);
+                        }}
+                        value={submitName2}
+                    />
+
+                    <button
+                        className='RefreshBtn'
+                        onClick={handleNameSubmit2}
+                    >Submit</button>
+
+
+                    <h4>Result</h4>
+                    <div className='resultDiv'>
+                        {/* This mean only access (ex. name) inside this object if not null. */}
+                        <p>Name: {avgObj?.name}</p>
+                        <p>Age: {avgObj?.age}</p>
+                        <p>Count: {avgObj?.count}</p>
+                    </div>
+                </div>
+
+                <div className='excuseGen'>
+                    <h3>Excuse Generator</h3>
+
+                    <p>{genExcuse}</p>
+
+                    <div className='excuseBtns'>
+                        <button
+                            className='RefreshBtn'
+                            onClick={() => {
+                                handleEscGen("party");
+                            }}
+                        >Party</button>
+
+                        <button
+                            className='RefreshBtn'
+                            onClick={() => {
+                                handleEscGen("gaming");
+                            }}
+                        >Gaming</button>
+
+                        <button
+                            className='RefreshBtn'
+                            onClick={() => {
+                                handleEscGen("developers");
+                            }}
+                        >Developer</button>
+                    </div>
+
+                </div>
             </div>
         </div>
     )

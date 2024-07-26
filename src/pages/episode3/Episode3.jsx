@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './episode3.css';
+import Navbar from '../../components/navbar/Navbar';
 
 const Episode2 = () => {
 
@@ -31,47 +32,52 @@ const Episode2 = () => {
 
 
     return (
-        <div className='episode3 container'>
-            <h1>Episode 3</h1>
+        <div>
+            <Navbar />
 
-            <div>
-                <h3>Click to Count</h3>
-                <div className='countContainer'>
-                    <button className='countBtn' onClick={handleCountDown}>Count Down</button>
+            <div className='episode3 container'>
+                <h1>Episode 3</h1>
 
-                    <p className='pBtn'>{number}</p>
+                <div>
+                    <h3>Click to Count</h3>
+                    <div className='countContainer'>
+                        <button className='countBtn' onClick={handleCountDown}>Count Down</button>
 
-                    <button className='countBtn' onClick={handleCountUp}>Count Up</button>
-                </div>
-            </div>
+                        <p className='pBtn'>{number}</p>
 
-            <div className='inputDiv'>
-                <h3>Input Value Displayed</h3>
-                <input type="text" onChange={handleInputValue} placeholder='Enter Value' />
-                <p><b>Output:</b> {inputValue}</p>
-            </div>
-
-            <div>
-                <div className='btnContainer'>
-                    <button
-                        className='btnClass'
-                        onClick={() => {
-                            setShowText(!showText)
-                        }}>Show/Hide</button>
-
-                    <button
-                        className='btnClass'
-                        onClick={() => {
-                            setTextColor(textColor === 'black' ? 'red' : 'black');
-                        }}>Change Color</button>
+                        <button className='countBtn' onClick={handleCountUp}>Count Up</button>
+                    </div>
                 </div>
 
-                {showText && <h4
-                    style={{ color: textColor }}
-                >Some text to test things.</h4>}
+                <div className='inputDiv'>
+                    <h3>Input Value Displayed</h3>
+                    <input type="text" onChange={handleInputValue} placeholder='Enter Value' />
+                    <p><b>Output:</b> {inputValue}</p>
+                </div>
 
+                <div>
+                    <div className='btnContainer'>
+                        <button
+                            className='btnClass'
+                            onClick={() => {
+                                setShowText(!showText)
+                            }}>Show/Hide</button>
+
+                        <button
+                            className='btnClass'
+                            onClick={() => {
+                                setTextColor(textColor === 'black' ? 'red' : 'black');
+                            }}>Change Color</button>
+                    </div>
+
+                    {showText && <h4
+                        style={{ color: textColor }}
+                    >Some text to test things.</h4>}
+
+                </div>
             </div>
         </div>
+
     )
 }
 

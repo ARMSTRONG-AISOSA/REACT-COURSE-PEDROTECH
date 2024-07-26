@@ -24,7 +24,7 @@ const Navbar = () => {
       )}
 
       <div className='navlinks'>
-      <Link to="/episode1" >Episode1</Link>
+      <Link to="/" >Episode1</Link>
       <Link to="/episode2" >Episode2</Link>
       <Link to="/episode3" >Episode3</Link>
       <Link to="/episode4" >Episode4</Link>
@@ -32,6 +32,10 @@ const Navbar = () => {
       <Link to="/episode6" >Episode6</Link>
       <Link to="/episode7" >Episode7</Link>
       <Link to="/episode8" >Episode8</Link>
+      <Link to="/episode9" >Episode9</Link>
+      <Link to="/episode10" >Episode10</Link>
+      <Link to="/episode11" >Episode11</Link>
+      <Link to="/episode12" >Episode12</Link>
       </div>
 
     </div>

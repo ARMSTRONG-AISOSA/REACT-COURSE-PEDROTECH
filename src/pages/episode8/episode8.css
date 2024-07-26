@@ -1,0 +1,38 @@
+.episode8 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.catFactDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dogImgDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.genDogImg {
+    height: 100px;
+    width: fit-content;
+}
+
+.queryBtn {
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: fit-content;
+    color: white;
+    background: rgba(10, 13, 160);
+    border: solid 1px rgba(128, 128, 128, 0.568);
+    transition: 0.2s all;
+}
+
+.queryBtn:hover {
+    background: rgba(10, 12, 160, 0.850);
+}

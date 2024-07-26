@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './episode2.module.css';
+import Navbar from '../../components/navbar/Navbar';
 import { useState } from 'react';
 import PlayerList from '../../components/playerList/PlayerList';
 
@@ -108,8 +109,9 @@ const Episode2 = () => {
     };
 
     return (
-        // <div className={styles.episode2}>
-        <div className={`${styles.episode2} container`}>
+        <div>
+            <Navbar />
+            <div className={`${styles.episode2} container`}>
             <h1>Css Module</h1>
             <div>
                 <h2>Ternary Operator</h2>
@@ -245,6 +247,8 @@ const Episode2 = () => {
             </div>
 
         </div>
+        </div>
+
     )
 }
 

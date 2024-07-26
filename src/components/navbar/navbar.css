@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #0000000a;
 }
 
 .navlinks {

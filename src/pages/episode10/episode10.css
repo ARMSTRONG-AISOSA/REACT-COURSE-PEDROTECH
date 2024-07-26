@@ -1,0 +1,5 @@
+.episode10 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
