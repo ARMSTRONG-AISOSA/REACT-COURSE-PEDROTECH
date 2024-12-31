@@ -12,6 +12,8 @@ import Episode7 from "./pages/episode7/Episode7";
 import Episode8 from "./pages/episode8/Episode8";
 import Episode9 from "./pages/episode9/Episode9";
 import Episode10 from "./pages/episode10/Episode10";
+import Episode11 from "./pages/episode11/Episode11";
+import Episode12 from "./pages/episode12/Episode12";
 
 import ErrorPage from './pages/errorpage/ErrorPage';
 
@@ -47,6 +49,8 @@ function App() {
               <Route path="/episode8" element={<Episode8 />} />
               <Route path="/episode9" element={<Episode9 />} />
               <Route path="/episode10" element={<Episode10 />} />
+              <Route path="/episode11" element={<Episode11 />} />
+              <Route path="/episode12" element={<Episode12 />} />
 
               {/* Error Page */}
               <Route path="*" element={<ErrorPage />} />

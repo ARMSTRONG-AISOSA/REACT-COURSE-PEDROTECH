@@ -3,12 +3,14 @@ import './episode10.css';
 import Navbar from '../../components/navbar/Navbar';
 import useToggle from '../../hook/useToggle/useToggle';
 import useCounter from '../../hook/useCounter/useCounter';
+import useDogImg from '../../hook/useDogImg/useDogImg';
 
 const Episode10 = () => {
 
   // Custom Hook
   const [isVisible, toggle] = useToggle();
   const [isVisible2, toggle2] = useToggle();
+  const { dogData, dogError, dogIsLoading, dogRefetch } = useDogImg();
 
   const [number, setNumber, handleCountUp, handleCountDown, handleCountZero, handleInputValue, inputValue, showText, setShowText] = useCounter();
 
@@ -48,7 +50,7 @@ const Episode10 = () => {
 
           <h3>Test Custom Component 2</h3>
 
-          <p className={`toggleContent ${isVisible2 ? 'expanded' : ''}`}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ut officiis facilis dicta voluptatem fugiat eos iure assumenda adipisci, sint deserunt dolor repellendus accusamus ratione, praesentium doloribus et provident soluta. Consectetur blanditiis soluta optio repudiandae, molestias rem voluptatem eveniet, quas asperiores nisi porro quo laudantium ab omnis accusantium accusamus aliquid?</p>
+          <p className={`toggleContent ${isVisible2 ? 'expanded' : ''}`}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ut officiis facilis dicta voluptatem fugiat eos iure assumenda adipisci, sint deserunt dolor repellendus accusamus ratione, praesentium doloribus et provident soluta. Consectetur blanditiis soluta doptio repudiandae, molestias rem voluptatem eveniet, quas asperiores nisi porro quo laudantium ab omnis accusantium accusamus aliquid?</p>
         </div>
 
         <div className='testCounter'>
@@ -67,6 +69,28 @@ const Episode10 = () => {
 
           </div>
 
+        </div>
+
+        <div className='dogPicDiv'>
+          <div>
+            <h3>Dog Image:</h3>
+            <h4>api custom component (React Query)</h4>
+          </div>
+
+          {dogIsLoading && <p>Loading....</p>}
+          {dogError && <p>Error Loading dog data</p>}
+          {!dogIsLoading && !dogError && <img
+            className='genDogPic'
+            src={dogData.message}
+            alt="Dog_Image"
+          />}
+
+          <button
+            className='refreshDataBtn'
+            onClick={() => {
+              dogRefetch();
+            }}
+          >Refresh Data</button>
         </div>
 
       </div>

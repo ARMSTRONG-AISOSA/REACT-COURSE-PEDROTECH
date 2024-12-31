@@ -24,18 +24,19 @@ const Navbar = () => {
       )}
 
       <div className='navlinks'>
-      <Link to="/" >Episode1</Link>
-      <Link to="/episode2" >Episode2</Link>
-      <Link to="/episode3" >Episode3</Link>
-      <Link to="/episode4" >Episode4</Link>
-      <Link to="/episode5" >Episode5</Link>
-      <Link to="/episode6" >Episode6</Link>
-      <Link to="/episode7" >Episode7</Link>
-      <Link to="/episode8" >Episode8</Link>
-      <Link to="/episode9" >Episode9</Link>
-      <Link to="/episode10" >Episode10</Link>
-      <Link to="/episode11" >Episode11</Link>
-      <Link to="/episode12" >Episode12</Link>
+      <Link to="/" >Epi1</Link>
+      <Link to="/episode2" >Epi2</Link>
+      <Link to="/episode3" >Epi3</Link>
+      <Link to="/episode4" >Epi4</Link>
+      <Link to="/episode5" >Epi5</Link>
+      <Link to="/episode6" >Epi6</Link>
+      <Link to="/episode7" >Epi7</Link>
+      <Link to="/episode8" >Epi8</Link>
+      <Link to="/episode9" >Epi9</Link>
+      <Link to="/episode10" >Epi10</Link>
+      <Link to="/episode11" >Epi11</Link>
+      <Link to="/episode12" >Epi12</Link>
+      <Link to="/episode12" >Epi13</Link>
       </div>
 
     </div>
